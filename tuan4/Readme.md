@@ -1,20 +1,22 @@
-#IMG
----------------------------------------------------------------------------------------------------------------------------------------
+Video Tuan 05
+---------------------------------------------------------------------------------------------------------------------
 
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/0dc0bb89-1134-443d-ac43-0f7496b0066f)
+--- Không âm thanh ---
 
----------------------------------------------------------------------------------------------------------------------------------------
+https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/954d5f03-4b38-41f7-9f7d-0d589370a194
 
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/fb888e39-be0d-4716-bf8b-4cd1609f241a)
+--- Có âm thanh ---
 
----------------------------------------------------------------------------------------------------------------------------------------
+https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/7bc85737-7626-40fa-8214-6ae408484b4c
 
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/cf8ae5ba-ccc4-48d8-a4a1-8a2c56afeaf6)
+---------------------------------------------------------------------------------------------------------------------
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/35789a5f-8c06-4d9e-99ca-d31d3400954b)
 
----------------------------------------------------------------------------------------------------------------------------------------
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/1e85e866-9e62-455c-beae-fd9c3702bf53)
 
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/c8ea3a37-2d02-4bd0-98da-31f1e8808ebf)
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/5040ad85-568a-4a7a-b461-b3ffc6045836)
 
----------------------------------------------------------------------------------------------------------------------------------------
 
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/4e6c416d-308f-495d-a99a-b358d15f13a0)
+
+
+![93a47b8e8d8a8228d3f431e8dd7dd9c6](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/55441a73-347b-47ae-96b4-3f9e93c86f1a)

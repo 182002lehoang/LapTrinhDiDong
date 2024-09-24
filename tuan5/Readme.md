@@ -1,22 +1,16 @@
-Video Tuan 05
----------------------------------------------------------------------------------------------------------------------
+# IMAGE
+------------------------------------------------------------------------------------------------------
+Giao diện chính.
 
---- Không âm thanh ---
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/3f2b4961-da6d-454b-acf1-6a200f3fef3b)
 
-https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/954d5f03-4b38-41f7-9f7d-0d589370a194
+------------------------------------------------------------------------------------------------------
+Chọn màu điện thoại.
 
---- Có âm thanh ---
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/e1a1c4b5-0a1c-4f7a-9745-47b998f5850e)
 
-https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/7bc85737-7626-40fa-8214-6ae408484b4c
+Chọn màu silver.
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/9362d407-05b1-4a13-bb8c-e1cd0fdb7daf)
 
----------------------------------------------------------------------------------------------------------------------
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/35789a5f-8c06-4d9e-99ca-d31d3400954b)
-
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/1e85e866-9e62-455c-beae-fd9c3702bf53)
-
-![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/5040ad85-568a-4a7a-b461-b3ffc6045836)
-
-
-
-
-![93a47b8e8d8a8228d3f431e8dd7dd9c6](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/55441a73-347b-47ae-96b4-3f9e93c86f1a)
+Hiển thị lại màu điện thoại đã chọn trên giao diện chính.
+![image](https://github.com/ThanhHiep25/Lap-trinh-di-dong/assets/87129597/3bbfd9c4-fceb-4c96-a369-ef84ea5f1123)
