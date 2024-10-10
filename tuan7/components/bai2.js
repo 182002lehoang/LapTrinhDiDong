@@ -1,20 +1,20 @@
-import { StyleSheet, Text, View, Image, TextInput , FlatList, Pressable} from 'react-native'
+import { StyleSheet, Text, View, Image, TextInput, FlatList, Pressable } from 'react-native'
 import React from 'react'
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { useRoute } from '@react-navigation/native';
+import { useNavigation } from 'expo-router';
+
 const bai2 = () => {
   const [data, setData] = useState([]);
   const [search, setSearch] = useState('');
+  const route = useRoute();
+  const { name, job } = route.params || [];
+  const navigation = useNavigation();
 
-  // useEffect((search) => {
-  //   fetch('https://6556cd42bd4bcef8b611a10d.mockapi.io/bai1')
-  //     .then(response => response.json())
-  //     .then(json => setData(json))
-  //     .catch(error => console.error(error));
-  // }, []);
   const fetchData = (query = '') => {
-    const url = query 
-      ? `https://6556cd42bd4bcef8b611a10d.mockapi.io/bai1?name=${query}` 
+    const url = query
+      ? `https://6556cd42bd4bcef8b611a10d.mockapi.io/bai1?name=${query}`
       : 'https://6556cd42bd4bcef8b611a10d.mockapi.io/bai1';
 
     fetch(url)
@@ -23,30 +23,60 @@ const bai2 = () => {
       .catch(error => console.error(error));
   };
 
-  
+
   useEffect(() => {
     fetchData();
   }, []);
+
+  useEffect(() => {
+    if (job) {
+      setData(prevData => [{ name: job, id: `${prevData.length + 1}` }, ...prevData]);
+    }
+  }, [job]);
+
 
   const handleSearch = (text) => {
     setSearch(text);
     fetchData(text);
   };
 
-  
+  const handleDelete = (id) => {
+    fetch(`https://6556cd42bd4bcef8b611a10d.mockapi.io/bai1/${id}`, {
+      method: 'DELETE',
+    })
+      .then(response => {
+        if (response.ok) {
+          setData(prevData => prevData.filter(item => item.id !== id));
+        } else {
+          console.log("loi")
+        }
+      })
+      .catch(error => console.log('error', error));
+
+  };
+
+
 
   const renderItem = ({ item }) => (
     <View style={styles.item}>
+      <Pressable onPress={()=>handleDelete(item.id)}>
+        <Text style={styles.text2}>xoa</Text>
+      </Pressable>
       <Text style={styles.itemText}>{item.name}</Text>
+
     </View>
   );
   return (
     <View style={styles.view}>
       <View style={styles.view1}>
-        <Image style={styles.img} source={require('.././assets/images/back1.png')}></Image>
+        <Pressable onPress={() => {
+          navigation.navigate('bai1')
+        }}>
+          <Image style={styles.img} source={require('.././assets/images/back1.png')}></Image>
+        </Pressable>
         <Image style={styles.img1} source={require('.././assets/images/user.png')}></Image>
         <View style={styles.view2}>
-          <Text style={styles.text}>Hi Twinkle</Text>
+          <Text style={styles.text}>Hi {name}</Text>
           <Text style={styles.text1}>Have agrate day a head</Text>
         </View>
       </View>
@@ -64,9 +94,11 @@ const bai2 = () => {
           keyExtractor={item => item.id}
         />
       </View>
-    <Pressable style={styles.pre}>
-      <Image style={styles.img3} source={require('../assets/images/add.png')}></Image>
-    </Pressable>
+      <Pressable style={styles.pre} onPress={() => {
+        navigation.navigate('bai3', { name })
+      }}>
+        <Image style={styles.img3} source={require('../assets/images/add.png')}></Image>
+      </Pressable>
     </View>
   )
 }
@@ -126,22 +158,28 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 50,
-    alignItems:'center'
-   
+    alignItems: 'center'
+
   },
   item: {
     padding: 20,
     borderBottomWidth: 1,
     borderBottomColor: '#ccc',
+    flexDirection: 'row'
   },
   itemText: {
     fontSize: 18,
   },
-  img3:{
-    width:50,
-    height:50
+  img3: {
+    width: 50,
+    height: 50
   },
-  pre:{
-    alignItems:'center'
+  pre: {
+    alignItems: 'center'
+  },
+  text2: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    right: 10
   }
 })

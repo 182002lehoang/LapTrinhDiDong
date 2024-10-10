@@ -1,30 +1,34 @@
 import { Pressable, StyleSheet, Text, View ,Image, TextInput} from 'react-native'
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigation } from 'expo-router'
 
 const bai1 = () => {
     const navigation = useNavigation();
+    const [name,setName] = useState("");
   return (
   <View style={styles.view1}>
       <View style={styles.view2}>
           <Image style={styles.img} source={(require('.././assets/images/book.png'))}>
 
           </Image>
-          <TextInput placeholder=''></TextInput>
+          
       </View>
       <Text style={styles.text}>
         MANAGE YOUR 
         TASK
       </Text>
       <View style={styles.view3}>
-          <TextInput placeholder='Enter your name' style={styles.ip}>
+          <TextInput placeholder='Enter your name' style={styles.ip} 
+            value={name}
+            onChangeText={setName}
+          >
             
           </TextInput>
           <Image style={styles.img1} source={require('.././assets/images/mail.png')}></Image>
       </View>
       <View style={styles.view4}>
             <Pressable style={styles.pre} onPress={()=>{
-              navigation.navigate('bai2')
+              navigation.navigate('bai2',{name})
             }}>
                   <Text style={styles.text1}>GET STARTED</Text>
                   <Image style={styles.img2} source={require('.././assets/images/back.png')}></Image>
